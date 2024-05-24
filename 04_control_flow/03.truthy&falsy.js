@@ -21,7 +21,7 @@ if(emptyarray.length===0){
 
 const emptyobj = {}
 if(Object.keys(emptyobj).length===0){
-    console.log("object is empty")  // object.keys converts the object into string
+    console.log("object is empty")  // object.keys converts the object into array
 }
 
 
@@ -33,7 +33,7 @@ let val1;
 // val1 = undefined ?? 15
 val1 = null ?? 10 ?? 20
 
-console.log(val1);
+// console.log(val1);
 
 
 // terniary operator
@@ -42,7 +42,7 @@ console.log(val1);
 
 const score = 300 
 
-score < 100 ? console.log("score is greater than 100"): console.log("score is less than 100")
+// score < 100 ? console.log("score is greater than 100"): console.log("score is less than 100")
 
 
 

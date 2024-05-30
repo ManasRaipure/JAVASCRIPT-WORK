@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul class="language">
+    <li>javasacript</li>
+</ul>
+    
+</body>
+<script>
+    function add (langname){
+     const li =  document.createElement('li')
+     li.innerHTML = `${langname}`
+     li.style.color = 'red'
+     document.querySelector('.language').append(li)
+ 
+ 
+    }
+    add('java')
+ 
+ //    function optilang (langname){
+ 
+ //     const li  =document.createElement('li')
+ //     li.appendChild(document.createTextNode(langname))
+ 
+ //     document.querySelector('.language').append(li)
+ 
+ //    }
+ //    optilang("golang") another way of inserting text and it is more optimized way
+ 
+   // edit
+ 
+    const secondlang=document.querySelector('li:nth-child(2)')
+    secondlang.innerHTML='typescript'
+ 
+    const firstlang = document.createElement('li')
+    firstlang.textContent = 'MOJO'
+    secondlang.replaceWith(firstlang)
+ 
+    const thirdlang = document.querySelector("li:first-child")
+    thirdlang.outerHTML=" <li>mango</li>"
+ 
+    // remove
+ 
+    const lastlang = document.querySelector('li:last-child')
+   lastlang.remove()
+ 
+ </script>
+</html>

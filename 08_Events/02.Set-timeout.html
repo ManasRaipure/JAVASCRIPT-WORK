@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>chai or code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+    // const timesup = function(){
+    //     console.log('Manas')
+    // }
+    
+    const changedtxt= function(){
+        document.querySelector("h1").innerHTML='Chai with Manas'
+}
+    
+   const stopped = setTimeout(changedtxt,2000)
+
+   document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(stopped)
+    console.log("clicked")
+   })
+
+   // here we are using reference such as stopped or changetxt in settimeout. 
+
+    
+</script>
+</html>
